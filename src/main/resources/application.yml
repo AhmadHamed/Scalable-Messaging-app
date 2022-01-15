@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: scalable-messaging-app
   security:
     oauth2:
       client:
@@ -6,3 +8,14 @@ spring:
           github:
             client-id: Iv1.d5e87dbca19f3196
             client-secret: 427843bfb6ce9749157bd317a13080fcf13b1217
+  data:
+    cassandra:
+      keyspace-name: main
+      username: UQxmlcvWJnqeFRogMjjQgzrw
+      password: Ag122CTx0Hjwmh73gLch65jnqFbZrBrK_TgcNyUEzkkfo8LEpLAXtxoQdk33ms+H4Sa3wuZFaHfKJ_Jns-lTchm8,0a.AM,4TSwPhNynULEQ+g9wRoO3m7capj.abyTa
+      schema-action: create_if_not_exists
+      request:
+        timeout: 10s
+      connection:
+        init-query-timeout: 10s
+        connect-timeout: 10s
