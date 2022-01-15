@@ -19,3 +19,12 @@ spring:
       connection:
         init-query-timeout: 10s
         connect-timeout: 10s
+
+astra.db:
+  id: e127054d-ddf6-4c45-92a8-4ec1723579fb-1
+  region: europe-west1
+  keyspace: main
+  application.token: AstraCS:UQxmlcvWJnqeFRogMjjQgzrw:a669d36cff06cc1bf5c6ba4a033090cef40faf86ebaddd001a9a2248bf983e4d
+
+datastax.astra:
+  secure-connect-bundle: secure-connect-messaging-app.zip
